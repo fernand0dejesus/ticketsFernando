@@ -14,8 +14,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Fernando_Hernandez_Crud_Tickets"
         tools:targetApi="31">
+
+
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Registro"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>
