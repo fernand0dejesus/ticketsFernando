@@ -47,7 +47,7 @@ class DashboardFragment : Fragment() {
                 val objConexion = ClaseConexion().cadenaConexion()
 
                 val Agregar = objConexion?.prepareStatement(
-                    "INSERT INTO tickets (uuid, titulo, descripcion, autor, email_autor, estado) VALUES (?, ?, ?, ?, ?, ?)"
+                    "INSERT INTO tbtickets (uuid, titulo, descripcion, autor, email_autor, estado) VALUES (?, ?, ?, ?, ?, ?)"
                 )!!
                 Agregar.setString(1, UUID.randomUUID().toString())
                 Agregar.setString(2, txtTitulo.text.toString())
@@ -59,8 +59,9 @@ class DashboardFragment : Fragment() {
 
 
 
+
             }
-            LimpiarCampos()
+
         }
 
 
